@@ -1,10 +1,14 @@
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Zap, Shield, Award, Star } from 'lucide-react';
 
 const ProductShowcase = () => {
+  const navigate = useNavigate();
+
   const products = [
     {
+      id: "premium-deep-tissue",
       name: "Premium Deep Tissue Massager",
       image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=500&h=500&fit=crop",
       description: "Professional-grade percussion therapy for ultimate muscle relief",
@@ -12,6 +16,7 @@ const ProductShowcase = () => {
       icon: <Zap className="w-6 h-6" />
     },
     {
+      id: "luxury-wellness-roller",
       name: "Luxury Wellness Roller",
       image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=500&h=500&fit=crop",
       description: "Elegant design meets therapeutic effectiveness for daily wellness",
@@ -19,6 +24,7 @@ const ProductShowcase = () => {
       icon: <Shield className="w-6 h-6" />
     },
     {
+      id: "signature-relaxation",
       name: "Signature Relaxation Device",
       image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=500&h=500&fit=crop",
       description: "Your personal sanctuary of tranquility and therapeutic relief",
@@ -26,6 +32,10 @@ const ProductShowcase = () => {
       icon: <Award className="w-6 h-6" />
     }
   ];
+
+  const handleLearnMore = (productId: string) => {
+    navigate(`/product/${productId}`);
+  };
 
   return (
     <section id="products" className="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
@@ -69,7 +79,10 @@ const ProductShowcase = () => {
                   ))}
                 </div>
                 
-                <button className="w-full py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                <button 
+                  onClick={() => handleLearnMore(product.id)}
+                  className="w-full py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                >
                   Learn More
                 </button>
               </div>
