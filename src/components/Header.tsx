@@ -33,15 +33,15 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex space-x-8">
-            <button onClick={() => scrollToSection('home')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors">Home</button>
-            <button onClick={() => scrollToSection('products')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors">Products</button>
-            <button onClick={() => scrollToSection('about')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors">About</button>
-            <button onClick={() => scrollToSection('benefits')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors">Benefits</button>
-            <button onClick={() => scrollToSection('contact')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors">Contact</button>
+            <button onClick={() => scrollToSection('home')} className="font-larken text-white hover:text-brand-accent transition-colors font-medium">Home</button>
+            <button onClick={() => scrollToSection('products')} className="font-larken text-white hover:text-brand-accent transition-colors font-medium">Products</button>
+            <button onClick={() => scrollToSection('about')} className="font-larken text-white hover:text-brand-accent transition-colors font-medium">About</button>
+            <button onClick={() => scrollToSection('benefits')} className="font-larken text-white hover:text-brand-accent transition-colors font-medium">Benefits</button>
+            <button onClick={() => scrollToSection('contact')} className="font-larken text-white hover:text-brand-accent transition-colors font-medium">Contact</button>
           </nav>
 
           <button 
-            className="md:hidden text-gray-700"
+            className="md:hidden text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -51,11 +51,11 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 py-4 glass-effect rounded-lg">
             <nav className="flex flex-col space-y-4 px-4">
-              <button onClick={() => scrollToSection('home')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors text-left">Home</button>
-              <button onClick={() => scrollToSection('products')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors text-left">Products</button>
-              <button onClick={() => scrollToSection('about')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors text-left">About</button>
-              <button onClick={() => scrollToSection('benefits')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors text-left">Benefits</button>
-              <button onClick={() => scrollToSection('contact')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors text-left">Contact</button>
+              <button onClick={() => scrollToSection('home')} className="font-larken text-white hover:text-brand-accent transition-colors text-left font-medium">Home</button>
+              <button onClick={() => scrollToSection('products')} className="font-larken text-white hover:text-brand-accent transition-colors text-left font-medium">Products</button>
+              <button onClick={() => scrollToSection('about')} className="font-larken text-white hover:text-brand-accent transition-colors text-left font-medium">About</button>
+              <button onClick={() => scrollToSection('benefits')} className="font-larken text-white hover:text-brand-accent transition-colors text-left font-medium">Benefits</button>
+              <button onClick={() => scrollToSection('contact')} className="font-larken text-white hover:text-brand-accent transition-colors text-left font-medium">Contact</button>
             </nav>
           </div>
         )}

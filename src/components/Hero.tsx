@@ -5,7 +5,7 @@ import { Sparkles, Heart } from 'lucide-react';
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 brand-gradient opacity-90"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-primary via-brand-accent to-brand-secondary opacity-90"></div>
       <div className="absolute inset-0 bg-black opacity-20"></div>
       
       {/* Floating elements */}
