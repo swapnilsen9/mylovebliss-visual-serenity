@@ -37,13 +37,13 @@ const Benefits = () => {
   ];
 
   return (
-    <section id="benefits" className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
+    <section id="benefits" className="py-20 bg-gradient-to-br from-brand-secondary to-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-fredoka mb-6 text-brand-primary">
             Transform Your Wellness
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-larken">
             Discover the life-changing benefits of incorporating premium massage therapy into your daily routine
           </p>
         </div>
@@ -54,28 +54,28 @@ const Benefits = () => {
               key={index}
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group"
             >
-              <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <div className="text-purple-600 group-hover:text-pink-600 transition-colors duration-300">
+              <div className="bg-brand-secondary rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-brand-primary group-hover:text-brand-accent transition-colors duration-300">
                   {benefit.icon}
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-gray-800">{benefit.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+              <h3 className="text-xl font-fredoka mb-4 text-gray-800">{benefit.title}</h3>
+              <p className="text-gray-600 leading-relaxed font-larken">{benefit.description}</p>
             </div>
           ))}
         </div>
 
         <div className="mt-16 text-center">
           <div className="bg-white rounded-3xl p-8 shadow-xl max-w-4xl mx-auto">
-            <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <h3 className="text-3xl font-fredoka mb-6 text-brand-primary">
               Your Journey to Wellness Starts Here
             </h3>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg text-gray-600 mb-8 font-larken">
               Join thousands of satisfied customers who have transformed their daily wellness routine with MyLoveBliss products.
             </p>
             <button 
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+              className="px-8 py-4 bg-brand-primary text-white rounded-full font-larken font-semibold hover:bg-opacity-90 hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               Start Your Journey
             </button>

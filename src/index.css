@@ -83,25 +83,30 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Larken', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
 
   html {
     scroll-behavior: smooth;
   }
+
+  /* Typography hierarchy */
+  h1, h2, h3 {
+    font-family: 'Fredoka One', cursive;
+  }
+
+  h4, h5, h6, p, span, div {
+    font-family: 'Larken', sans-serif;
+  }
 }
 
 @layer utilities {
-  .luxury-gradient {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  .brand-gradient {
+    background: linear-gradient(135deg, #3E28CA 0%, #FDB4D1 100%);
   }
   
-  .gold-gradient {
-    background: linear-gradient(135deg, #f7931e 0%, #e94057 100%);
-  }
-  
-  .wellness-gradient {
-    background: linear-gradient(135deg, #a8e6cf 0%, #88d8c0 100%);
+  .brand-gradient-secondary {
+    background: linear-gradient(135deg, #FCF3EC 0%, #FDB4D1 100%);
   }
   
   .glass-effect {

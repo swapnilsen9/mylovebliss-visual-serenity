@@ -28,16 +28,16 @@ const Header = () => {
     }`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <div className="text-2xl font-fredoka text-brand-primary">
             MyLoveBliss
           </div>
           
           <nav className="hidden md:flex space-x-8">
-            <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-purple-600 transition-colors">Home</button>
-            <button onClick={() => scrollToSection('products')} className="text-gray-700 hover:text-purple-600 transition-colors">Products</button>
-            <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-purple-600 transition-colors">About</button>
-            <button onClick={() => scrollToSection('benefits')} className="text-gray-700 hover:text-purple-600 transition-colors">Benefits</button>
-            <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-purple-600 transition-colors">Contact</button>
+            <button onClick={() => scrollToSection('home')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors">Home</button>
+            <button onClick={() => scrollToSection('products')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors">Products</button>
+            <button onClick={() => scrollToSection('about')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors">About</button>
+            <button onClick={() => scrollToSection('benefits')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors">Benefits</button>
+            <button onClick={() => scrollToSection('contact')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors">Contact</button>
           </nav>
 
           <button 
@@ -51,11 +51,11 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 py-4 glass-effect rounded-lg">
             <nav className="flex flex-col space-y-4 px-4">
-              <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-purple-600 transition-colors text-left">Home</button>
-              <button onClick={() => scrollToSection('products')} className="text-gray-700 hover:text-purple-600 transition-colors text-left">Products</button>
-              <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-purple-600 transition-colors text-left">About</button>
-              <button onClick={() => scrollToSection('benefits')} className="text-gray-700 hover:text-purple-600 transition-colors text-left">Benefits</button>
-              <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-purple-600 transition-colors text-left">Contact</button>
+              <button onClick={() => scrollToSection('home')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors text-left">Home</button>
+              <button onClick={() => scrollToSection('products')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors text-left">Products</button>
+              <button onClick={() => scrollToSection('about')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors text-left">About</button>
+              <button onClick={() => scrollToSection('benefits')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors text-left">Benefits</button>
+              <button onClick={() => scrollToSection('contact')} className="font-larken text-gray-700 hover:text-brand-primary transition-colors text-left">Contact</button>
             </nav>
           </div>
         )}

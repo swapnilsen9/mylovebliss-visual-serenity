@@ -38,13 +38,13 @@ const ProductShowcase = () => {
   };
 
   return (
-    <section id="products" className="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
+    <section id="products" className="py-20 bg-gradient-to-br from-brand-secondary to-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-fredoka mb-6 text-brand-primary">
             Premium Collection
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-larken">
             Each product in our collection is meticulously crafted to deliver an unparalleled wellness experience
           </p>
         </div>
@@ -62,26 +62,28 @@ const ProductShowcase = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-lg">
-                  {product.icon}
+                  <div className="text-brand-primary">
+                    {product.icon}
+                  </div>
                 </div>
               </div>
               
               <div className="p-8">
-                <h3 className="text-2xl font-bold mb-4 text-gray-800">{product.name}</h3>
-                <p className="text-gray-600 mb-6">{product.description}</p>
+                <h3 className="text-2xl font-fredoka mb-4 text-gray-800">{product.name}</h3>
+                <p className="text-gray-600 mb-6 font-larken">{product.description}</p>
                 
                 <div className="space-y-2 mb-6">
                   {product.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center">
-                      <Star className="w-4 h-4 text-yellow-500 mr-2" />
-                      <span className="text-sm text-gray-600">{feature}</span>
+                      <Star className="w-4 h-4 text-brand-orange mr-2" />
+                      <span className="text-sm text-gray-600 font-larken">{feature}</span>
                     </div>
                   ))}
                 </div>
                 
                 <button 
                   onClick={() => handleLearnMore(product.id)}
-                  className="w-full py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                  className="w-full py-3 bg-brand-primary text-white rounded-full font-larken font-semibold hover:bg-opacity-90 hover:shadow-lg transition-all duration-300 transform hover:scale-105"
                 >
                   Learn More
                 </button>

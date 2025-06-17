@@ -19,18 +19,31 @@ export default {
 		},
 		extend: {
 			colors: {
+				// Brand Colors from your palette
+				brand: {
+					primary: '#3E28CA', // Primary purple
+					secondary: '#FCF3EC', // Light cream/pink
+					accent: '#FDB4D1', // Pink accent
+					dark: '#000000', // Black
+					coral: '#EE4B3C', // Coral/red
+					blue: '#1873C1', // Blue
+					green: '#1FA849', // Green
+					orange: '#F9B60B', // Orange
+					lightPurple: '#FCF3EC', // Light purple
+				},
+				// Keep existing shadcn colors for components
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					DEFAULT: '#3E28CA',
+					foreground: '#FFFFFF'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					DEFAULT: '#FCF3EC',
+					foreground: '#000000'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -41,8 +54,8 @@ export default {
 					foreground: 'hsl(var(--muted-foreground))'
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+					DEFAULT: '#FDB4D1',
+					foreground: '#000000'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -62,6 +75,11 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			fontFamily: {
+				'fredoka': ['Fredoka One', 'cursive'],
+				'larken': ['Larken', 'sans-serif'],
+				'sans': ['Larken', 'sans-serif'], // Set Larken as default sans
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
