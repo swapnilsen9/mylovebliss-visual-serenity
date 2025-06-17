@@ -29,7 +29,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className={`text-2xl font-fredoka ${
-            isScrolled ? 'text-brand-primary' : 'text-brand-primary'
+            isScrolled ? 'text-brand-primary' : 'text-white'
           }`}>
             MyLoveBliss
           </div>
