@@ -5,7 +5,7 @@ import { componentTagger } from 'lovable-tagger';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig(({ mode }) => ({
-  base: '/mylovebliss-visual-serenity/',
+  base: '/',
   plugins: [
     react(),
     mode === 'development' && componentTagger(),
