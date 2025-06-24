@@ -29,32 +29,32 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className={`text-2xl font-fredoka ${
-            isScrolled ? 'text-brand-primary' : 'text-white'
+            isScrolled ? 'text-brand-primarywhite' : 'text-brand-primarywhite'
           }`}>
             MyLoveBliss
           </div>
           
           <nav className="hidden md:flex space-x-8">
             <button onClick={() => scrollToSection('home')} className={`font-larken ${
-              isScrolled ? 'text-brand-primary' : 'text-white'
+              isScrolled ? 'text-brand-primarywhite' : 'text-brand-primarywhite'
             } hover:text-brand-accent transition-colors font-medium`}>Home</button>
             <button onClick={() => scrollToSection('products')} className={`font-larken ${
-              isScrolled ? 'text-brand-primary' : 'text-white'
+              isScrolled ? 'text-brand-primarywhite' : 'text-brand-primarywhite'
             } hover:text-brand-accent transition-colors font-medium`}>Products</button>
             <button onClick={() => scrollToSection('about')} className={`font-larken ${
-              isScrolled ? 'text-brand-primary' : 'text-white'
+              isScrolled ? 'text-brand-primarywhite' : 'text-brand-primarywhite'
             } hover:text-brand-accent transition-colors font-medium`}>About</button>
             <button onClick={() => scrollToSection('benefits')} className={`font-larken ${
-              isScrolled ? 'text-brand-primary' : 'text-white'
+              isScrolled ? 'text-brand-primarywhite' : 'text-brand-primarywhite'
             } hover:text-brand-accent transition-colors font-medium`}>Benefits</button>
             <button onClick={() => scrollToSection('contact')} className={`font-larken ${
-              isScrolled ? 'text-brand-primary' : 'text-white'
+              isScrolled ? 'text-brand-primarywhite' : 'text-brand-primarywhite'
             } hover:text-brand-accent transition-colors font-medium`}>Contact</button>
           </nav>
 
           <button 
             className={`md:hidden ${
-              isScrolled ? 'text-brand-primary' : 'text-white'
+              isScrolled ? 'text-brand-primarywhite' : 'text-brand-primarywhite'
             }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
@@ -65,11 +65,11 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 py-4 glass-effect rounded-lg">
             <nav className="flex flex-col space-y-4 px-4">
-              <button onClick={() => scrollToSection('home')} className="font-larken text-brand-primary hover:text-brand-accent transition-colors text-left font-medium">Home</button>
-              <button onClick={() => scrollToSection('products')} className="font-larken text-brand-primary hover:text-brand-accent transition-colors text-left font-medium">Products</button>
-              <button onClick={() => scrollToSection('about')} className="font-larken text-brand-primary hover:text-brand-accent transition-colors text-left font-medium">About</button>
-              <button onClick={() => scrollToSection('benefits')} className="font-larken text-brand-primary hover:text-brand-accent transition-colors text-left font-medium">Benefits</button>
-              <button onClick={() => scrollToSection('contact')} className="font-larken text-brand-primary hover:text-brand-accent transition-colors text-left font-medium">Contact</button>
+              <button onClick={() => scrollToSection('home')} className="font-larken text-brand-primarywhite hover:text-brand-accent transition-colors text-left font-medium">Home</button>
+              <button onClick={() => scrollToSection('products')} className="font-larken text-brand-primarywhite hover:text-brand-accent transition-colors text-left font-medium">Products</button>
+              <button onClick={() => scrollToSection('about')} className="font-larken text-brand-primarywhite hover:text-brand-accent transition-colors text-left font-medium">About</button>
+              <button onClick={() => scrollToSection('benefits')} className="font-larken text-brand-primarywhite hover:text-brand-accent transition-colors text-left font-medium">Benefits</button>
+              <button onClick={() => scrollToSection('contact')} className="font-larken text-brand-primarywhite hover:text-brand-accent transition-colors text-left font-medium">Contact</button>
             </nav>
           </div>
         )}

@@ -38,10 +38,10 @@ const ProductShowcase = () => {
   };
 
   return (
-    <section id="products" className="py-20 bg-gradient-to-br from-brand-secondary to-white">
+    <section id="products" className="py-20 bg-gradient-to-br from-brand-secondaryViolet to-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-fredoka mb-6 text-brand-primary">
+          <h2 className="text-4xl md:text-5xl font-fredoka mb-6 text-brand-primaryblue">
             Premium Collection
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto font-larken">
@@ -62,7 +62,7 @@ const ProductShowcase = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-lg">
-                  <div className="text-brand-primary">
+                  <div className="text-brand-primaryblue">
                     {product.icon}
                   </div>
                 </div>
@@ -83,7 +83,7 @@ const ProductShowcase = () => {
                 
                 <button 
                   onClick={() => handleLearnMore(product.id)}
-                  className="w-full py-3 bg-brand-primary text-white rounded-full font-larken font-semibold hover:bg-opacity-90 hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                  className="w-full py-3 bg-brand-primaryblue text-white rounded-full font-larken font-semibold hover:bg-opacity-90 hover:shadow-lg transition-all duration-300 transform hover:scale-105"
                 >
                   Learn More
                 </button>

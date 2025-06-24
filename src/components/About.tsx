@@ -8,7 +8,7 @@ const About = () => {
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-fredoka mb-8 text-brand-primary">
+            <h2 className="text-4xl md:text-5xl font-fredoka mb-8 text-brand-primaryblue">
               Crafting Wellness, One Touch at a Time
             </h2>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed font-larken">
@@ -20,8 +20,8 @@ const About = () => {
             
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="flex items-start space-x-4">
-                <div className="bg-brand-secondary rounded-full p-3">
-                  <Heart className="w-6 h-6 text-brand-primary" />
+                <div className="bg-brand-secondaryViolet rounded-full p-3">
+                  <Heart className="w-6 h-6 text-brand-primaryblue" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-2 font-fredoka">Made with Love</h4>
@@ -31,7 +31,7 @@ const About = () => {
               
               <div className="flex items-start space-x-4">
                 <div className="bg-brand-accent bg-opacity-20 rounded-full p-3">
-                  <Users className="w-6 h-6 text-brand-primary" />
+                  <Users className="w-6 h-6 text-brand-primaryblue" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-2 font-fredoka">Customer First</h4>
@@ -40,8 +40,8 @@ const About = () => {
               </div>
               
               <div className="flex items-start space-x-4">
-                <div className="bg-brand-secondary rounded-full p-3">
-                  <Award className="w-6 h-6 text-brand-primary" />
+                <div className="bg-brand-secondaryViolet rounded-full p-3">
+                  <Award className="w-6 h-6 text-brand-primaryblue" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-2 font-fredoka">Premium Quality</h4>
@@ -51,7 +51,7 @@ const About = () => {
               
               <div className="flex items-start space-x-4">
                 <div className="bg-brand-accent bg-opacity-20 rounded-full p-3">
-                  <Sparkles className="w-6 h-6 text-brand-primary" />
+                  <Sparkles className="w-6 h-6 text-brand-primaryblue" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-2 font-fredoka">Innovation</h4>

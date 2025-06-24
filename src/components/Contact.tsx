@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, Instagram, Facebook, Twitter } from 'lucide-react'
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-brand-dark to-brand-primary text-white">
+    <section id="contact" className="py-20 bg-gradient-to-br from-brand-dark to-brand-primaryblue text-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-fredoka mb-6 text-shadow">

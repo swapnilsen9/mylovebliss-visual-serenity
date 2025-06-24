@@ -1,11 +1,18 @@
-
 import React from 'react';
 import { Sparkles, Heart } from 'lucide-react';
 
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-brand-primary via-brand-accent to-brand-secondary opacity-90"></div>
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: "url('./img/hero.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      ></div>
       <div className="absolute inset-0 bg-black opacity-20"></div>
       
       {/* Floating elements */}
@@ -32,13 +39,13 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           <button 
             onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-8 py-4 bg-white text-brand-primary rounded-full font-larken font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-xl"
+            className="px-8 py-4 bg-white text-brand-primaryblue rounded-full font-larken font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-xl"
           >
             Explore Collection
           </button>
           <button 
             onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-8 py-4 border-2 border-white text-white rounded-full font-larken font-semibold hover:bg-white hover:text-brand-primary transition-all duration-300 transform hover:scale-105"
+            className="px-8 py-4 border-2 border-white text-white rounded-full font-larken font-semibold hover:bg-white hover:text-brand-primaryblue transition-all duration-300 transform hover:scale-105"
           >
             Our Story
           </button>

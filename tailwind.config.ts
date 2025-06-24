@@ -21,15 +21,19 @@ export default {
 			colors: {
 				// Brand Colors from your palette
 				brand: {
-					primary: '#3E28CA', // Primary purple
-					secondary: '#FCF3EC', // Light cream/pink
-					accent: '#FDB4D1', // Pink accent
-					dark: '#000000', // Black
-					coral: '#EE4B3C', // Coral/red
-					blue: '#1873C1', // Blue
-					green: '#1FA849', // Green
-					orange: '#F9B60B', // Orange
-					lightPurple: '#FCF3EC', // Light purple
+					primaryblue: '#3E28CA', // Primary purple
+					primaryblack: '#000000', // Black
+					primarywhite: '#FCF3EC', // White
+					primaryPink: '#FDB4D1', // Pink
+					secondaryBlack: '#000000', // Secondary black
+					secondaryViolet: '#7C4BFF', // Secondary Violet
+					secondaryLilac: '#DE9DFD', // Lilac
+					secondaryYellow: '#FDB4D1', // Yellow
+					secondaryRed: '#EE4B3C', // Red
+					secondaryBlue: '#1873C', // Blue
+					secondaryGreen: '#1FA849', // Green
+					secondaryPeach: '#F9B6B0', // Peach
+					neonGreen: '#d2fb55', // Neon Green
 				},
 				// Keep existing shadcn colors for components
 				border: 'hsl(var(--border))',

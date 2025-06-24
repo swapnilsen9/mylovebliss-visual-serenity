@@ -37,10 +37,10 @@ const Benefits = () => {
   ];
 
   return (
-    <section id="benefits" className="py-20 bg-gradient-to-br from-brand-secondary to-white">
+    <section id="benefits" className="py-20 bg-gradient-to-br from-brand-secondaryViolet to-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-fredoka mb-6 text-brand-primary">
+          <h2 className="text-4xl md:text-5xl font-fredoka mb-6 text-brand-primaryblue">
             Transform Your Wellness
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto font-larken">
@@ -54,8 +54,8 @@ const Benefits = () => {
               key={index}
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group"
             >
-              <div className="bg-brand-secondary rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <div className="text-brand-primary group-hover:text-brand-accent transition-colors duration-300">
+              <div className="bg-brand-secondaryViolet rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-brand-primaryblue group-hover:text-brand-accent transition-colors duration-300">
                   {benefit.icon}
                 </div>
               </div>
@@ -67,7 +67,7 @@ const Benefits = () => {
 
         <div className="mt-16 text-center">
           <div className="bg-white rounded-3xl p-8 shadow-xl max-w-4xl mx-auto">
-            <h3 className="text-3xl font-fredoka mb-6 text-brand-primary">
+            <h3 className="text-3xl font-fredoka mb-6 text-brand-primaryblue">
               Your Journey to Wellness Starts Here
             </h3>
             <p className="text-lg text-gray-600 mb-8 font-larken">
@@ -75,7 +75,7 @@ const Benefits = () => {
             </p>
             <button 
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-8 py-4 bg-brand-primary text-white rounded-full font-larken font-semibold hover:bg-opacity-90 hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+              className="px-8 py-4 bg-brand-primaryblue text-white rounded-full font-larken font-semibold hover:bg-opacity-90 hover:shadow-lg transition-all duration-300 transform hover:scale-105"
             >
               Start Your Journey
             </button>
