@@ -34,6 +34,7 @@ const ProductShowcase = () => {
   ];
 
   const handleLearnMore = (productId: string) => {
+    scrollTo(0, 0); // Scroll to top when navigating
     navigate(`/product/${productId}`);
   };
 
