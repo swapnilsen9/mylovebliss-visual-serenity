@@ -16,7 +16,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/mylovebliss-visual-serenity/">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/product/:productId" element={<ProductDetail />} />

@@ -6,11 +6,15 @@ import ProductShowcase from '../components/ProductShowcase';
 import About from '../components/About';
 import Benefits from '../components/Benefits';
 import Contact from '../components/Contact';
+import AutoscrollBar from '@/components/AutoscrollBar';
+import CategorySection from '@/components/CategorySection';
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
+      <AutoscrollBar />
+      <CategorySection />
       <Hero />
       <ProductShowcase />
       <About />

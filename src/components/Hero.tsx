@@ -3,11 +3,11 @@ import { Sparkles, Heart } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: "url('./img/hero.jpg')",
+          backgroundImage: "url('./images/hero.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
