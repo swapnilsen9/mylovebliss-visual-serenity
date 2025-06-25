@@ -110,9 +110,9 @@ const ProductDetail = () => {
       <Header />
       
       <div className="pt-20">
-        <div className="container mx-auto px-6 py-12">
+        <div className="container mx-auto px-4 sm:px-6 py-12">
           <button 
-            onClick={() => navigate('/')}
+            onClick={() => navigate(-1)}
             className="flex items-center text-purple-600 hover:text-purple-700 mb-8 transition-colors"
           >
             <ArrowLeft className="w-5 h-5 mr-2" />
