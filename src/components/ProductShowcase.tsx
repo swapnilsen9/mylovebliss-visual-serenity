@@ -39,13 +39,13 @@ const ProductShowcase = () => {
   };
 
   return (
-    <section id="products" className="py-20 bg-gradient-to-br from-brand-secondaryViolet to-white">
+    <section id="products" className="py-20 bg-gradient-to-br from-[#aac945] to-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-fredoka mb-6 text-brand-primaryblue">
+          <h2 className="text-4xl md:text-5xl font-larken mb-6 text-brand-primaryblack">
             Premium Collection
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-larken">
+          <p className="text-xl text-brand-primaryblack max-w-3xl mx-auto font-larken">
             Each product in our collection is meticulously crafted to deliver an unparalleled wellness experience
           </p>
         </div>

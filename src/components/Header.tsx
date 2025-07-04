@@ -49,9 +49,9 @@ const Header = () => {
             <button onClick={() => scrollToSection('about')} className={`font-larken ${
               isScrolled ? 'text-brand-primarywhite drop-shadow-sm' : 'text-brand-secondaryBlack'
             } hover:text-brand-accent transition-colors font-medium`}>About</button>
-            <button onClick={() => scrollToSection('benefits')} className={`font-larken ${
+            {/* <button onClick={() => scrollToSection('benefits')} className={`font-larken ${
               isScrolled ? 'text-brand-primarywhite drop-shadow-sm' : 'text-brand-secondaryBlack'
-            } hover:text-brand-accent transition-colors font-medium`}>Benefits</button>
+            } hover:text-brand-accent transition-colors font-medium`}>Benefits</button> */}
             <button onClick={() => scrollToSection('contact')} className={`font-larken ${
               isScrolled ? 'text-brand-primarywhite drop-shadow-sm' : 'text-brand-secondaryBlack'
             } hover:text-brand-accent transition-colors font-medium`}>Contact</button>
@@ -73,7 +73,7 @@ const Header = () => {
               <button onClick={() => scrollToTop()} className="font-larken text-brand-primarywhite hover:text-brand-accent transition-colors text-left font-medium">Home</button>
               <button onClick={() => scrollToSection('products')} className="font-larken text-brand-primarywhite hover:text-brand-accent transition-colors text-left font-medium">Products</button>
               <button onClick={() => scrollToSection('about')} className="font-larken text-brand-primarywhite hover:text-brand-accent transition-colors text-left font-medium">About</button>
-              <button onClick={() => scrollToSection('benefits')} className="font-larken text-brand-primarywhite hover:text-brand-accent transition-colors text-left font-medium">Benefits</button>
+              {/* <button onClick={() => scrollToSection('benefits')} className="font-larken text-brand-primarywhite hover:text-brand-accent transition-colors text-left font-medium">Benefits</button> */}
               <button onClick={() => scrollToSection('contact')} className="font-larken text-brand-primarywhite hover:text-brand-accent transition-colors text-left font-medium">Contact</button>
             </nav>
           </div>

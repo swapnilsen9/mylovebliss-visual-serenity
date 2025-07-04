@@ -26,15 +26,12 @@ const Hero = () => {
         <Sparkles className="text-brand-accent opacity-30" size={20} />
       </div>
       
-      <div className="relative z-10 text-center text-white px-6 max-w-4xl">
-        <h1 className="text-5xl md:text-7xl font-fredoka mb-6 animate-fade-in-up text-shadow">
-          Experience Pure
-          <span className="block text-brand-accent">
-            Wellness Bliss
-          </span>
+      <div className="relative z-10 text-center text-white px-5 max-w-4xl">
+        <h1 className="text-5xl md:text-7xl font-larken mb-6 animate-fade-in-up text-shadow text-black md:leading-[1.2]">
+          Experience Pure<br/>Welness Bliss
         </h1>
-        <p className="text-xl md:text-2xl mb-8 animate-fade-in-up opacity-90 font-larken" style={{ animationDelay: '0.3s' }}>
-          Discover our premium collection of therapeutic massagers designed to elevate your wellness journey
+        <p className="text-xl md:text-2xl mb-8 animate-fade-in-up opacity-90 font-larken text-black" style={{ animationDelay: '0.3s' }}>
+          Discover our premium collection of massagers designed to elevate your wellness journey
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           <button 
