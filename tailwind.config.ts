@@ -30,7 +30,7 @@ export default {
 					secondaryLilac: '#DE9DFD', // Lilac
 					secondaryYellow: '#FDB4D1', // Yellow
 					secondaryRed: '#EE4B3C', // Red
-					secondaryBlue: '#1873C', // Blue
+                                        secondaryBlue: '#1873CF', // Blue
 					secondaryGreen: '#1FA849', // Green
 					secondaryPeach: '#F9B6B0', // Peach
 					neonGreen: '#d2fb55', // Neon Green
