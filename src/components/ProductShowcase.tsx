@@ -80,11 +80,11 @@ const ProductShowcase = () => {
           {products.map((product, index) => (
             <SwiperSlide key={index} className="flex justify-center">
               <div className="flex flex-col h-[500px] w-[300px] md:w-[366px] bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 group">
-                <div className="relative card-image">
+                <div className="relative h-56 overflow-hidden">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-lg">
                     <div className="text-brand-primaryblue">
