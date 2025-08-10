@@ -13,7 +13,7 @@ const Hero = () => {
           backgroundRepeat: 'no-repeat',
         }}
       ></div>
-      <div className="absolute inset-0 bg-black opacity-20"></div>
+      <div className="absolute inset-0 opacity-20"></div>
       
       {/* Floating elements */}
       <div className="absolute top-20 left-10 animate-float">
@@ -42,7 +42,7 @@ const Hero = () => {
           </button>
           <button 
             onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-8 py-4 border-2 border-white text-white rounded-full font-larken font-semibold hover:bg-white hover:text-brand-primaryblue transition-all duration-300 transform hover:scale-105"
+            className="px-8 py-4 border-2 border-white text-black rounded-full font-larken font-semibold hover:bg-white hover:text-brand-primaryblue transition-all duration-300 transform hover:scale-105"
           >
             Our Story
           </button>
